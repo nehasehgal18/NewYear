@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="open.css" />
+    <script>
+      function openUp() {
+        const $opentop = document.querySelector("#opentop");
+        const $top = document.querySelector("#top");
+        const $front = document.querySelector("#front");
+        const $back = document.querySelector("#back");
+        const $letter = document.querySelector("#letter");
+        const $button = document.querySelector("button");
+
+        $opentop.beginElement();
+        $top.style.zIndex = 2;
+
+        $top.classList.add("animate");
+        $front.classList.add("animate");
+        $back.classList.add("animate");
+        $button.classList.add("animate");
+        $letter.classList.add("animate");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="text">
+      <h1>HI BABY.... THIS IS FOR YOU.</h1>
+      
+    </div>
+    <div id="envelope">
+      <div id="back">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 300,100 300,300 0,300"
+            style="fill: #4a274a; stroke: none; stroke-width: 0"
+          />
+        </svg>
+      </div>
+      <div id="front">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 150,200 300,100 300,300 0,300"
+            style="fill: #2abad0; stroke: #ffffff; stroke-width: 3"
+          />
+        </svg>
+      </div>
+      <div id="top">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 150,200 300,100"
+            style="fill: #2abad0; stroke: #ffffff; stroke-width: 2"
+          >
+            <animate
+              id="opentop"
+              attributeName="points"
+              dur="0.5s"
+              fill="freeze"
+              begin="indefinite"
+              from="0,100 150,200 300,100"
+              to="0,100 150,0 300,100"
+            />
+          </polygon>
+        </svg>
+      </div>
+
+      <div id="letter">
+        <h1 style="margin-bottom: -12px;">For My <span>Love</span></h1>
+
+        <!-- <img src="https://i.postimg.cc/5yZQnDpb/ukraine-7424066-640.webp" />-->
+        <p>
+          HAPPY NEW YEAR SATYARTH 💖....
+          <br />
+          You were the most beautiful part of last year ❣️; You will be the most beautiful part of this year as well 💞
+          , and I want to start the first moment of this year with you my man (mera Pasandida Mard)🥰.
+         <!-- Moving into 2024 with my man (mera Pasandida Mard). -->
+         The way you talk to me, the way you hold me, the way you look at me, it’s so magical, you make me feel like a queen. Thank you for making me feel this way. This year is going to be even better. I LOVE YOU SOOO MUCH BUBU 😘.
+          <br />
+          Iss saal bhi apka khoon piya tha aur agle saal bhi piyungi>👽🤪(Koi problem toh nahi hai na apko, Honi bhi ni chahiye 💗) 
+          <br> Now that you are part of me, I give you my heart to keep, for no one else makes me happy and loves me the way you do. <br>
+          If You Accept
+          <a href="new.html">Click Here</a>
+        </p>
+      </div>
+      <button onclick="openUp()">Click Here</button>
+    </div>
+  </body>
+</html>
